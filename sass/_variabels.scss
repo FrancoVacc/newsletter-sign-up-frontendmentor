@@ -1,0 +1,30 @@
+@font-face{
+    font-family: "roboto-b" ;
+    src: url(../assets/fonts/Roboto-Bold.ttf);
+    font-style: "bold";
+}
+
+@font-face{
+    font-family: "roboto-r" ;
+    src: url(../assets/fonts/Roboto-Regular.ttf);
+    font-style: "regular";
+}
+
+$font-color: #242843;
+
+@mixin boton(){
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 0.8rem;
+    background-color: #242843;
+
+    &:hover{
+        background: rgb(254,83,121);
+        background: linear-gradient(90deg, rgba(254,83,121,1) 35%, rgba(254,106,62,1) 100%);
+        box-shadow: 0 10px 10px rgba(254, 83, 120, 0.308);
+    }
+}

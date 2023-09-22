@@ -1,0 +1,74 @@
+.res{
+    overflow-x: hidden ;
+    height: 100vh;
+    background-color: #fff;
+    display: none;
+    border-radius: 20px;
+    padding: 4rem 1.5rem;
+
+    img{
+        width: 17%;
+        padding: 2rem 0;
+
+        @media(min-width: 425px){
+            width: 13%;
+            padding:0;
+        }
+    }
+
+
+    h2{
+        font-family: "roboto-b";
+        font-weight: 900;
+        font-size: 2rem;
+        color: $font-color;
+
+        @media(min-width: 420px){
+            font-size: 1.7rem;
+            margin-top: 1rem;
+        }
+    }
+
+    p{
+        padding-top: 20px;
+        font-family: "roboto-r";
+        font-weight: 800;
+        font-size: 0.75rem;
+        color: $font-color;
+
+        span{
+            font-family: "roboto-b";
+            font-weight: 900;
+        }
+
+        @media(min-width: 420px){
+            font-size: 0.6rem;
+            margin-top: 1rem;
+        }
+    }
+
+    input{
+        @include boton();
+        margin-top: 35%;
+
+        @media(min-width: 420px){
+            font-size: 0.6rem;
+            margin-top: 1rem;
+            padding: 1rem;
+        }
+    }
+
+    @media (min-width:425px) {
+        // position: absolute;
+        // top: 20%;
+        // left: 35%;
+        flex-direction: row-reverse;
+        overflow: hidden;
+        max-width: 300px;
+        max-height: 350px;
+        margin: 5% auto;
+        padding: 2rem;
+        border-radius: 20px;
+    }
+
+}

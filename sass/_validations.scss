@@ -1,0 +1,24 @@
+.show{
+    display: block;
+}
+
+.show-b{
+    display: block;
+    @media(min-width: 420px){
+        display: flex;
+    }
+}
+
+.not-show{
+    display: none;
+}
+
+.validate{
+    border: 2px solid rgb(251, 143, 140); 
+    color: rgb(251, 143, 140);
+    background-color: rgb(255, 232, 230);
+}
+
+.valid-text-show{
+    display: block !important;
+}
